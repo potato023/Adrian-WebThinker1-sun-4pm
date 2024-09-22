@@ -10,66 +10,14 @@
   </style>
 </head>
 
-<body>
-<div class="row">
-  <div class="col-2 border border-dark">hdaid</div>
-  <div class="col-10 border border-dark bg-primary opasity-25">hdaid</div>
-</div>
-</body>
-
-</html>
-
-<!--pl-5 pr-4 pt-3 pb-2 px-1 py-5 p-3  -->
-
-
-
-<table class="table">
-  <thead>
-      <tr>
-        <th>subject code</th>
-        <th>subject name</th>
-        <th>grade</th>
-      </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1739</td>
-      <td>fgrdsdvfd</td>
-      <td><p>F</p><p><button class="btn btn-primary align-">grade</button></p></td>
-    </tr>
-    
-
-    <tr>
-      <td>1739</td>
-      <td>fgrdsdvfd</td>
-      <td><p>F</p><p><button class="btn btn-primary">grade</button></p></td>
-    </tr>
 
 
 
 
 
 
-    <script>
-      let t = (6)
-      let e = (8)
-      let te = (10)
-
-      let to = (te*e*t)
-
-      console.log(to)
-    </script>
-  </tbody>
 
 
-
-
-<script>
-  console.log("hi")
-  console.warn("hi")
-  console.error("hi")
-</script>
-</table>
 
 
 
@@ -80,14 +28,23 @@
 
 
 <script>
-  let nu=9999
+  function() {let valid_contact = document.getElementById("contact number")}
 
-  if (nu>0) {
-    console.log('posotive')
-  } else if (nu<0){
-    console.log('negative')
-  } else {console.log('0')}
+  if (valid_contact.value.length = 0) {}
 </script>
 
 
 
+
+
+<form inputmode="number" id="contact number" label="contact number">
+  <div class="row">
+    <div class="col">
+      <input type=number id="contact number" class="contact">
+      <div class =" text-danger d-none" id = "contactnumvalidation">
+        <p>please input number</p>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" onclick="vlaidate()">submit</button>
+</form>
