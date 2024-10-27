@@ -49,8 +49,32 @@
 		<!-- Key section -->
 		<div class="container py-3 pb-4">
 			<!-- Create An Unordered List with 2 List Items -->
-
+			<ul class="nav nav-pills mb-3">
+				<li class="nav-item"><button class="nav-link rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">Scratch Projects</button></li>
+				<li class="nav-item"><button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#canvas">HTML Canvas Projects</button></li>
+			</ul>
 			<div class="tab-content">
+				<div class="tab-pane show active" id="scratch">
+					<h3>Monke and Banana</h3>
+					<iframe class="mw-100 mh-100" src="https://scratch.mit.edu/projects/808392264/embed" title="Monke and Banana" width="485" height="400"></iframe>
+					<h3>Platformer Game</h3>
+					<iframe class="mw-100 mh-100" src="https://scratch.mit.edu/projects/779856092/embed" title="Monke and Banana" width="485" height="400"></iframe>
+				</div>
+				<div class="tab-pane" id="canvas">
+					<canvas class="border border-dark" id="canvasBoard" width="800" height="600"></canvas>
+					<script>
+						const canvas = document.getElementById("canvasBoard");
+						let ctx = canvas.getContext("2d");
+						
+						ctx.font="50px comic sans MS";
+						ctx.textalign="center";
+						ctx.fillText("hello world",50,150);
+						// ctx.beginPath();
+						// ctx.fillStyle = "rgb(1, 1, 128)";
+						// ctx.arc(120, 120, 100, 0, 2*Math.PI);
+						// ctx.fill();
+					</script>
+				</div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
 				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
